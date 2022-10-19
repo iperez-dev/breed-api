@@ -9,7 +9,7 @@ async function apiRequest() {
     const data = await response.json();
 
     console.log(data);
-    document.querySelector("h2").innerText = data.petBreed;
+    document.querySelector("h3").innerText = data.facts;
   } catch (error) {
     console.log(error);
   }
