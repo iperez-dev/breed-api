@@ -75,6 +75,6 @@ app.get("/api/:petBreed", (request, response) => {
   }
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
   console.log(`The server is running in port ${PORT}`);
 });
